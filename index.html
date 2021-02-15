@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ETHBerlin</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favi/favicon-16x16.png">
+    <link rel="manifest" href="img/favi/site.webmanifest">
+    <link rel="mask-icon" href="img/favi/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script type="text/javascript" src="dist/paper-full.js"></script>
     <script type="text/paperscript" canvas="canvas">
         var bigGroup = new Group();
@@ -18,7 +25,7 @@
                 strokeColor: 'black',
                 strokeWidth: 10
             });
-        
+
             var symbol = new Symbol(circle);
             for (var i = 0; i < count; i++) {
                 var position = view.size * Point.random();
@@ -26,7 +33,7 @@
                 group.addChild(placed);
             }
         }
-        
+
         function createPatterns(group, pointData, sizeData) {
           var shape = new Shape.Rectangle({
                 point: pointData,
@@ -48,31 +55,31 @@
               strokeWidth: strokeWidth,
               strokeCap: 'square'
           };
-  
+
           var symbol = new Symbol(pathYellow);
-  
+
           for (var i = 0; i < 2; i++) {
               var position = view.size * Point.random();
               var placed = symbol.place(position);
               group.addChild(placed);
           }
         }
-    
+
         function createBigGroup() {
           createCircles(bigGroup, 200, 2);
           createPatterns(bigGroup, [20,20], [150, 150]);
           createYellowPattern(bigGroup, 70, 20);
         }
-    
+
         function createSmallGroup() {
           createCircles(smallGroup, 70, 1);
           createPatterns(smallGroup, [10,10], [70, 70]);
           createYellowPattern(smallGroup, 30, 5);
         }
-    
+
         var x = window.matchMedia("(max-width: 600px)");
         var y = window.matchMedia("(min-width: 601px)");
- 
+
         if (x.matches) {
           createSmallGroup();
         } else {
@@ -98,7 +105,7 @@
         y.addListener(function(y) {
           toggleGroupVisibility(bigGroup, y.matches, createBigGroup);
         });
-        
+
         function onMouseDrag(event) {
             // The radius is the distance between the position
             // where the user clicked and the current position
@@ -108,11 +115,11 @@
                 radius: (event.downPoint - event.point).length,
                 fillColor: 'blue',
             });
-        
+
             // Remove this path on the next drag event:
             path.removeOnDrag();
         };
-      
+
         //stroke blue 1
         var pathBlue = new Path(new Point(2, 20), new Point(250, 50));
         pathBlue.style = {
@@ -128,19 +135,19 @@
             var position = view.size * Point.random();
             var placed = symbol.place(position);
         }
-        
+
         (function () {
             var hamburger = {
                 navToggle: document.querySelector('.nav-toggle'),
                 nav: document.querySelector('nav'),
-        
+
                 doToggle: function (e) {
                     e.preventDefault();
                     this.navToggle.classList.toggle('expanded');
                     this.nav.classList.toggle('expanded');
                 }
             };
-        
+
             hamburger.navToggle.addEventListener('click', function (e) {
                 hamburger.doToggle(e);
             });
@@ -151,9 +158,9 @@
               e.stopPropagation();
             });
         }());
-        
-        
-       
+
+
+
     </script>
 
 </head>
@@ -164,27 +171,31 @@
         <ul id="navList">
             <li><a href="about.html">about+FAQs</a></li>
             <li><a href="hack.html">hack</a></li>
-            <li><a href="speak.html">speak</a></li>
+            <li><a href="speak.html">speakers</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/1RAPeTP1WurV57uwzm8YS9MRn2lnQ5XK9rRlfJ3cPYDc">schedule<img class="external-link" src="img/external.svg" alt="external link to the schedule"></a></li>
             <li><a href="team.html">join</a></li>
-            <li><a href="sponsor.html">sponsor</a></li>
+            <li><a href="sponsor.html">sponsors</a></li>
             <li><a href="https://www.dappcon.io/" target="_blank">dAppcon<img class="external-link" src="img/external.svg" alt="external link to dappcon.io"></a></li>
             <li><a href="https://medium.com/ethberlin" target="_blank">blog<img class="external-link" src="img/external.svg" alt="external link to ethberlin blog"></a></li>
-            <hr>
         </ul>
       </h3>
+      <br>
         <div class="nav-second">
             <ul id="navList-small">
                 <li><h7><a href="http://decentralala.com" target="_blank">A Department of Decentralization Hacker Extravaganza<img class="external-link-med" src="img/external.svg" alt="external link to DoD"></a></h7></li>
                 //
-                <li><h7>Part of the <a href="https://blockchainweek.berlin/" target="_blank">Berlin Blockchain Week<img class="external-link-med" src="img/external.svg" alt="external link to ethberlin Berlin Blockchain Week"></a></h7></li>
+                <li><h7>part of the <a href="https://blockchainweek.berlin/" target="_blank">Berlin Blockchain Week<img class="external-link-med" src="img/external.svg" alt="external link to ethberlin Berlin Blockchain Week"></a></h7></li>
                 //
-                <li><h7><a href="https://github.com/Department-of-Decentralization/decentralala.com/blob/master/code-of-conduct.md" target="_blank">code of conduct<img class="external-link-med" src="img/external.svg" alt="external link to code of conduct"></a></h7></li>
+                <li><h7><a href="https://ethberlinzwei.github.io/KnowledgeBase/code-of-conduct.html" target="_blank">code of conduct<img class="external-link-med" src="img/external.svg" alt="external link to code of conduct"></a></h7></li>
                 //
                 <li><h7><a href="imprint.html">imprint</a></h7></li>
                 //
                 <li><h7><a href="privacy.html">privacy policy</a></h7></li>
                 //
                 <li><h7>design inspired by Bauhaus</a></h7></li>
+                //
+                <li><h7>want to support us? <br>donate <a href="https://etherscan.io/address/0x82338b1b27cfc0c27d79c3738b748f951ab1a7a0" target="_blank">
+                  here<img class="external-link-small" src="img/external.svg" alt="external link to etherscan" style="width: 5%;"></a></h7></li>
             </ul>
         </div>
     </div>
@@ -198,7 +209,7 @@
         <ul id="navList">
             <li><a href="about.html"><h4>about+FAQs</h4></a></li>
             <li><a href="hack.html"><h4>hack</h4></a></li>
-            <li><a href="speak.html"><h4>speak</h4></a></li>
+            <li><a href="speak.html"><h4>speakers</h4></a></li>
             <li><a href="team.html"><h4>join</h4></a></li>
             <li><a href="sponsor.html"><h4>sponsor</h4></a></li>
             <li><a href="https://www.dappcon.io/" target="_blank"><h4>dAppcon<img class="external-link-small" src="img/external.svg" alt="external link to dappcon.io"></h4></a></li>
@@ -209,25 +220,27 @@
                 //
                 <li><h7>Part of the <a href="https://blockchainweek.berlin/" target="_blank">Berlin Blockchain Week<img class="external-link-small" src="img/external.svg" alt="external link to ethberlin Berlin Blockchain Week"></a></h7></li>
                 //
-                <li><h7><a href="https://github.com/Department-of-Decentralization/decentralala.com/blob/master/code-of-conduct.md" target="_blank">code of conduct<img class="external-link-small" src="img/external.svg" alt="external link to code of conduct"></a></h7></li>
+                <li><h7><a href="https://ethberlinzwei.github.io/KnowledgeBase/code-of-conduct.html" target="_blank">code of conduct<img class="external-link-small" src="img/external.svg" alt="external link to code of conduct"></a></h7></li>
                 //
                 <li><h7><a href="imprint.html">imprint</a></h7></li>
                 //
-                <li><h7>design inspired by Bauhaus</a></h7></li>
+                <li><h7>design inspired by Bauhaus</h7></li>
+                //
+                <li><h7>want to support us? <br>donate <a href="https://etherscan.io/address/0x82338b1b27cfc0c27d79c3738b748f951ab1a7a0" target="_blank">
+                here<img class="external-link-small" src="img/external.svg" alt="external link to etherscan" style="width: 1.5%;"></a></h7></li>
         </ul>
       </nav>
     </div>
 
+
     <div class="main-subtext">
-        <div class="subtext">
-            <h4><strong>Hackathon:</strong> 23-25.08.19, Factory Görlitzer Park</h4>
-            <h4><strong>Conference & Workshops:</strong> 21-22.08.19 at dAppcon (Technical University of Berlin)</h4>
-        </div>
+            <strong>Hackathon:</strong> August 23rd 6pm -25.08.19, Factory Berlin Görlitzer Park
+            <h4><strong>Conference & Workshops:</strong> 21-23.08.19 (till 4pm) at dAppcon (Technical University of Berlin)</h4>
+    </div>
         <!-- <div class="instructionText">
             <p>click and drag to make your own pattern <img src="img/cursor.png" class="cursor" style="width: 1rem">
             </p>
         </div> -->
-    </div>
     <canvas id="canvas" style="background-color: rgb(255, 251, 239)" resize></canvas>
 
 </body>

@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favi/favicon-16x16.png">
+    <link rel="manifest" href="img/favi/site.webmanifest">
+    <link rel="mask-icon" href="img/favi/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>ETHBerlin</title>
     <script type="text/javascript" src="dist/paper-full.js"></script>
     <script type="text/paperscript" canvas="canvas">
-        
 
-        //stroke orange 
+
+        //stroke orange
         var pathOrange = new Path(new Point(2, 20), new Point(250, 50));
             pathOrange.style = {
             strokeColor: 'orange',
@@ -33,19 +40,19 @@
         }
 
     //hamburger menu
-        
+
         (function () {
           var hamburger = {
               navToggle: document.querySelector('.nav-toggle'),
               nav: document.querySelector('nav'),
-      
+
               doToggle: function (e) {
                   e.preventDefault();
                   this.navToggle.classList.toggle('expanded');
                   this.nav.classList.toggle('expanded');
               }
           };
-      
+
           hamburger.navToggle.addEventListener('click', function (e) {
               hamburger.doToggle(e);
           });
@@ -56,8 +63,8 @@
             e.stopPropagation();
           });
       }());
-        
-            
+
+
 
     </script>
 </head>
@@ -70,9 +77,9 @@
                     <ul id="navList-horizontal">
                         <li><a href="about.html">about+FAQs</a></li>
                         <li><a href="hack.html">hack</a></li>
-                        <li><a href="speak.html">speak</a></li>
+                        <li><a href="speak.html">speakers</a></li>
                         <li><a href="team.html">join</a></li>
-                        <li><a href="sponsor.html">sponsor</a></li>
+                        <li><a href="sponsor.html">sponsors</a></li>
                         <li><a href="https://www.dappcon.io/">dAppcon</a></li>
                         <li><a href="https://medium.com/ethberlin">blog</a></li>
                     </ul>
@@ -86,7 +93,7 @@
                       <ul id="navList">
                           <li><a href="about.html"><h4>about+FAQs</h4></a></li>
                           <li><a href="hack.html"><h4>hack</h4></a></li>
-                          <li><a href="speak.html"><h4>speak</h4></a></li>
+                          <li><a href="speak.html"><h4>speakers</h4></a></li>
                           <li><a href="team.html"><h4>join</h4></a></li>
                           <li><a href="sponsor.html"><h4>sponsor</h4></a></li>
                           <li><a href="https://www.dappcon.io/" target="_blank"><h4>dAppcon<img class="external-link-small" src="img/external.svg" alt="external link to dappcon.io"></h4></a></li>
@@ -97,7 +104,7 @@
                               //
                               <li><h7>Part of the <a href="https://blockchainweek.berlin/" target="_blank">Berlin Blockchain Week<img class="external-link-small" src="img/external.svg" alt="external link to ethberlin Berlin Blockchain Week"></a></h7></li>
                               //
-                              <li><h7><a href="https://github.com/Department-of-Decentralization/decentralala.com/blob/master/code-of-conduct.md" target="_blank">code of conduct<img class="external-link-small" src="img/external.svg" alt="external link to code of conduct"></a></h7></li>
+                              <li><h7><a href="https://ethberlinzwei.github.io/KnowledgeBase/code-of-conduct.html" target="_blank">code of conduct<img class="external-link-small" src="img/external.svg" alt="external link to code of conduct"></a></h7></li>
                               //
                               <li><h7><a href="imprint.html">imprint</a></h7></li>
                               //
@@ -109,42 +116,37 @@
                   </div>
                 <hr>
         <div class="content">
+                <div class="title"><h6>Press & Media</h6></div>
+                <div class="title"><h4>For all press requests or media enquiries please contact Helena Flack, helena[at]ethberlin.com</div>
+
                 <div class="title"><h6>Volunteer</h6></div>
-                <h4><a href="https://ethberlin.typeform.com/to/rUwtqW"</a>Do you want to join the fun? Apply to volunteer.<br>
-                    FORM HERE - DEADLINE JUNE 1ST 
-                <br>
-                <h4>Initiative led by Franzi Heintel & Raul Romanutti</h4>
+                <div class="title"><h4>Volunteer applications are now closed. For any volunteer-related inquiry, feel free to reach out to volunteers[at]ethberlin.com!</div>
+
+                <div class="title"><h4>Initiative led by Franzi Heintel and Raul Romanutti</h4></div>
                 <br>
                 <div class="title"><h6>Mentor</h6></div>
-                <h4>Have some awesome skills to share? Mentor at ETHBerlinZwei.<br>
-                    FORM HERE - DEADLINE JUNE 1ST <a href="https://ethberlin.typeform.com/to/j9W5NZ"</a>
-                <br>
-                <h4>Mentorship taskforce organized by Phil “Liam” Stehlik,
-                    Elias Haase and Caspar Schwarz “the shiller” Schilling.</h4>
-                
-                    
-                <br>
-                <br>
-                <br>
-                <div class="title"><h6>Judge</h6></div>
-                <h4>To apply to judge e-mail: <a href="mailto:joinus@ethberlin.com">joinus@ethberlin.com.</a><br>
-                    please note that judges cannot be mentors or hackers as well.<br>
-                    Please apply for judging ONLY if you don’t want to participate on the aforementioned two categories. There is room for everyone.<br>
-                    Write us an e-mail with the subject “So, I think I can JUDGE!!!” and why this is interesting for you.
-                    <br>
-                <h4>Judging process is designed and executed by Chris Heymann, Lasse Claussen, and Mareen Gläske</h4>
-                <br>
-                <h4>We expect all volunteers, mentors and judges to accept and adhere to our
-                    <a href="https://github.com/ethberlin-hackathon/ETHBerlin-KnowledgeBase/blob/master/code-of-conduct.md">Code of Conduct.</a></h4>
+                <div class="title"><h4>Mentor applications are now closed.</div>
 
-                    
-                    
-                
-                
-    
+                <div class="title"><h4><h4>Mentorship taskforce organized by Phil “Liam” Stehlik, Elias Haase, and Caspar Schwarz “the shiller” Schilling.</h4></div>
+                </div>
+                <div class="title"><h6>Judge</h6></div>
+                <div class="title"><h4>Judges applications are now closed.</div>
+                <div class="title"><h4>Please bear in mind, that unless you are a speaker or hacker, we cannot provide free conference tickets, - you will however have full access to everything held at the Factory venue, and of course delicious food and awesome swag (hackathon), please get in touch if you have any comments </h4></div>
+                <div class="title"><h4> The judging process is designed and executed by Chris Heymann, Lasse Claussen, and Mareen Gläske</h4>
+                </div>
+                <br>
+                <div class="title"><h6>CoC</h6></div>
+                <div class="title"><h4>We expect all volunteers, mentors and judges to accept and adhere to our <a href="https://ethberlinzwei.github.io/KnowledgeBase/code-of-conduct.html">Code of Conduct.</a></h4>
+                </div>
+
+
+
+
+
+
         </div>
     <canvas id="canvas" style="background-color: rgb(255, 251, 239)" resize="true"></canvas>
     </div>
-    
+
 </body>
 </html>

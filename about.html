@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favi/favicon-16x16.png">
+    <link rel="manifest" href="img/favi/site.webmanifest">
+    <link rel="mask-icon" href="img/favi/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>ETHBerlin</title>
     <script type="text/javascript" src="dist/paper-full.js"></script>
     <script type="text/paperscript" canvas="canvas">
-        
 
-        //stroke red 
+
+        //stroke red
             var pathRed = new Path(new Point(2, 20), new Point(250, 50));
                 pathRed.style = {
 	            strokeColor: 'red',
@@ -31,21 +38,21 @@
             function onFrame(event) {
                 pathRed.rotate(1);
             }
-        
+
         //hamburger menu
-        
+
             (function () {
               var hamburger = {
                   navToggle: document.querySelector('.nav-toggle'),
                   nav: document.querySelector('nav'),
-          
+
                   doToggle: function (e) {
                       e.preventDefault();
                       this.navToggle.classList.toggle('expanded');
                       this.nav.classList.toggle('expanded');
                   }
               };
-          
+
               hamburger.navToggle.addEventListener('click', function (e) {
                   hamburger.doToggle(e);
               });
@@ -56,7 +63,7 @@
                 e.stopPropagation();
               });
           }());
-            
+
 
     </script>
 </head>
@@ -71,7 +78,7 @@
                         <li><a href="hack.html">hack</a></li>
                         <li><a href="speak.html">speak</a></li>
                         <li><a href="team.html">join</a></li>
-                        <li><a href="sponsor.html">sponsor</a></li>
+                        <li><a href="sponsor.html">sponsors</a></li>
                         <li><a href="https://www.dappcon.io/">dAppcon</a></li>
                         <li><a href="https://medium.com/ethberlin">blog</a></li>
                     </ul>
@@ -97,7 +104,7 @@
                               //
                               <li><h7>Part of the <a href="https://blockchainweek.berlin/" target="_blank">Berlin Blockchain Week<img class="external-link-small" src="img/external.svg" alt="external link to ethberlin Berlin Blockchain Week"></a></h7></li>
                               //
-                              <li><h7><a href="https://github.com/Department-of-Decentralization/decentralala.com/blob/master/code-of-conduct.md" target="_blank">code of conduct<img class="external-link-small" src="img/external.svg" alt="external link to code of conduct"></a></h7></li>
+                              <li><h7><a href="https://ethberlinzwei.github.io/KnowledgeBase/code-of-conduct.html" target="_blank">code of conduct<img class="external-link-small" src="img/external.svg" alt="external link to code of conduct"></a></h7></li>
                               //
                               <li><h7><a href="imprint.html">imprint</a></h7></li>
                               //
@@ -109,9 +116,11 @@
                   </div>
                 <hr>
         <div class="content">
-                <div class="title"><h6>about + FAQs</h6></div>
+                <div class="title"><h6>f.a.q.</h6></div>
+                <h4 style="text-align:center">Questions? Head straight to the <a href="https://ethberlinzwei.github.io/KnowledgeBase/index.html">knowledge base</a>!<br />TL;DR? Ok, here's the <a href="https://docs.google.com/spreadsheets/d/1RAPeTP1WurV57uwzm8YS9MRn2lnQ5XK9rRlfJ3cPYDc">schedule</a>!</h4>
+                <div class="title"><h6>about</h6></div>
                 <h4>ETHBerlinZwei is a hackathon, a culture festival, an educational event,
-                    a platform for hacktivism, and a community initiative to push the decentralized ecosystem forward. 
+                    a platform for hacktivism, and a community initiative to push the decentralized ecosystem forward.
                     After a successful <a href="https://ethberlin.com/photos/" target="_blank">2018 event</a>,
                     ETHBerlin decided to reaffirm its commitment with the ecosystem and founded <a href="https://decentralala.com" target="_blank">the Department of Decentralization</a>,
                     responsible for initiatives that go beyond organizing a hackathon
@@ -122,16 +131,16 @@
                     and most importantly, a hub where builders will be able to get their creative juices flowing
                     by discovering various cultural and educational experiences spread across almost a week.
                     ETHBerlinZwei’s talks and panels will be held at <a href="https://www.dappcon.io/" target="_blank">dAppcon Berlin</a>
-                    so all participants will have access to the two-day conference before diving deep into the Zwei experience.</h4>
+                    so all participants will have access to the conference before diving deep into the Zwei experience.</h4>
 		        <h4><strong>Who we are (in alphabetical order):</strong><h4>
-		        <h4>Adeola - Afri - Alex - Ben - Caspar - Chris - Daniel - Elias - exiledsurfer - Franzi - Guto - Hels - Herni - Lasse - Lili - Maya - Mareen - Maurice - MP - Phil - Raul - Simon - Stina - Trenton<h4> 
+		        <h4>Adeola - Afri - Alex - Ben - Carl - Carlos - Caspar - Chris - Chris - Daniel - Elias - exiledsurfer - Fanny - Federico - Franzi - Griffin - Guto - Helena - Herni - Katy - Lasse - Ligi - Lili - Mareen - Matthias - Maurice - Maya - MP - Nico - Phil - Raul - Simon - Stina - Trenton<h4>
 
 		        <h4>Special thanks to our friends at Gnosis, Full Node, and dAppcon<h4>
                 <br>
                 <br>
                 <div class="title"><h6>concept</h6></div>
                 <h4>Our website design and 2019 image are inspired by the centennial of the Bauhaus school.</h4>
-                
+
                 <h4>The Bauhaus, a German word meaning "house of building",
                     is a school founded in 1919 in Weimar, Germany by the architect Walter Gropius.
                     Its mission, according to Gropius, was to conceive and create the new building of the future,
@@ -140,7 +149,7 @@
                     In short, the Bauhaus trained students to be equally comfortable with design, craft, and methods of mass production.
                     The Bauhaus pioneers were fearless builders, that withstood persecution, criticism, had to be exiled, but in the end,
                     their legacy prevails as the most influential school of the last century.</h4>
-                
+
                 <h4>ETHBerlin is a house of building, too.</h4>
                 <h4>Made by builders, for builders.
                     We don’t need to explain the parallelisms here. Feel free to dig into the site,
@@ -153,10 +162,10 @@
                 Graphic design and architectural feedback:  <a href="https://twitter.com/trent_vanepps" target="_blank">Trenton Van Epps</a><br />
                 Illustration and reconceptualization: Hernán Fernández<br />
                 Concept:  <a href="https://twitter.com/MPtherealMVP" target="_blank">MP Fernández</a></h4>
-    
+
         </div>
     <canvas id="canvas" style="background-color: rgb(255, 251, 239)" resize="true"></canvas>
     </div>
-    
+
 </body>
 </html>

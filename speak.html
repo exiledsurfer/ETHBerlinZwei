@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favi/favicon-16x16.png">
+    <link rel="manifest" href="img/favi/site.webmanifest">
+    <link rel="mask-icon" href="img/favi/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>ETHBerlin</title>
     <script type="text/javascript" src="dist/paper-full.js"></script>
     <script type="text/paperscript" canvas="canvas">
-                    
 
-        //stroke blue 
+
+        //stroke blue
         var pathBlue = new Path(new Point(2, 20), new Point(250, 50));
             pathBlue.style = {
             strokeColor: 'blue',
@@ -31,22 +38,22 @@
         function onFrame(event) {
             pathBlue.rotate(1);
         }
-            
+
 
     //hamburger menu
-        
+
           (function () {
             var hamburger = {
                 navToggle: document.querySelector('.nav-toggle'),
                 nav: document.querySelector('nav'),
-        
+
                 doToggle: function (e) {
                     e.preventDefault();
                     this.navToggle.classList.toggle('expanded');
                     this.nav.classList.toggle('expanded');
                 }
             };
-        
+
             hamburger.navToggle.addEventListener('click', function (e) {
                 hamburger.doToggle(e);
             });
@@ -69,9 +76,9 @@
                     <ul id="navList-horizontal">
                         <li><a href="about.html">about+FAQs</a></li>
                         <li><a href="hack.html">hack</a></li>
-                        <li><a href="speak.html">speak</a></li>
+                        <li><a href="speak.html">speakers</a></li>
                         <li><a href="team.html">join</a></li>
-                        <li><a href="sponsor.html">sponsor</a></li>
+                        <li><a href="sponsor.html">sponsors</a></li>
                         <li><a href="https://www.dappcon.io/">dAppcon</a></li>
                         <li><a href="https://medium.com/ethberlin">blog</a></li>
                     </ul>
@@ -85,7 +92,7 @@
                       <ul id="navList">
                           <li><a href="about.html"><h4>about+FAQs</h4></a></li>
                           <li><a href="hack.html"><h4>hack</h4></a></li>
-                          <li><a href="speak.html"><h4>speak</h4></a></li>
+                          <li><a href="speak.html"><h4>speakers</h4></a></li>
                           <li><a href="team.html"><h4>join</h4></a></li>
                           <li><a href="sponsor.html"><h4>sponsor</h4></a></li>
                           <li><a href="https://www.dappcon.io/" target="_blank"><h4>dAppcon<img class="external-link-small" src="img/external.svg" alt="external link to dappcon.io"></h4></a></li>
@@ -96,7 +103,7 @@
                               //
                               <li><h7>Part of the <a href="https://blockchainweek.berlin/" target="_blank">Berlin Blockchain Week<img class="external-link-small" src="img/external.svg" alt="external link to ethberlin Berlin Blockchain Week"></a></h7></li>
                               //
-                              <li><h7><a href="https://github.com/Department-of-Decentralization/decentralala.com/blob/master/code-of-conduct.md" target="_blank">code of conduct<img class="external-link-small" src="img/external.svg" alt="external link to code of conduct"></a></h7></li>
+                              <li><h7><a href="https://ethberlinzwei.github.io/KnowledgeBase/code-of-conduct.html" target="_blank">code of conduct<img class="external-link-small" src="img/external.svg" alt="external link to code of conduct"></a></h7></li>
                               //
                               <li><h7><a href="imprint.html">imprint</a></h7></li>
                               //
@@ -108,49 +115,267 @@
                   </div>
                 <hr>
         <div class="content">
-                
-                    
-                <div class="title"><h6>Speak</h6></div>
-                <h4>ETHBerlinZwei sticks to the premise of no pay to play.<br />
-                    All speakers will have equal chances to participate in our conference tracks within dAppcon Berlin (August 21st to 22nd).<br>
-                    Everyone can apply, but we highly encourage hackers to do so,
-                    as some of you have been touring long enough and have solid things to share with the community.</h4>
-                    
-                <h4>Rules:</h4>
-                <div><h4>
-                        <ul>
-                            <li>No more than two applications per person</li>
-                            <li>No project pitches</li>
-                            <li>Find topics that can be useful for the ecosystem, not only your project!</li>
-                            <li>Applications are only for panels or talks, if applying as a panel, please name ALL the people involved.</li>
-                            <li>Feel free to get a bit crazy and off-topic, we love originality.</li>
-                            
-                        </ul>
-                    </h4>
-                </div>
 
-                <h4>Last but not least: if you sent us a product/project pitch, that means that you skipped reading the rules right above.
-                    <br>
-                    You had ONE job. We are not taking these applications into consideration.
-                    <br>
-                    If you still don’t think that it’s fair we rejected your product pitch,
-                    considering we did tell you two times about our rules, please email us at <a href="mailto:noreply@ethberlin.com">noreply@ethberlin.com</a></h4>
+            <div class="title"><h6>speakers</h6></div>
+            <h4 style="text-align:center">*** More speakers coming soon! ***</h4>
                 <br>
-                <h4><Applicatins to speak are now closed.</a></h4>
+            <div class="grid-container">
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-afri.png"></div>
+                    <br>
+                        <strong>Afri Schoedon</strong>
+                    <div class="twitter"><a href="https://twitter.com/a4fri" target="blank">@a4fri</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-alejandro.png"></div>
+                    <br>
+                        <strong>Alejandro Machado</strong>
+                    <div class="twitter"><a href="https://twitter.com/alegw" target="blank">@alegw</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-ana.png"></div>
+                    <br>
+                        <strong>Ana Andrianova</strong>
+                    <div class="twitter"><a href="https://twitter.com/ana_andrianova/" target="blank">@ana_andria</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-arlyn.png"></div>
+                    <br>
+                        <strong>Arlyn Culwick</strong>
+                    <div class="twitter"><a href="https://twitter.com/arlynculwick" target="blank">@arlynculwick</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-birgetta.png"></div>
+                    <br>
+                        <strong>Birgitta Jonsdottir</strong>
+                    <div class="twitter"><a href="https://twitter.com/birgittaj" target="blank">@birgittaj</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-casey.png"></div>
+                    <br>
+                        <strong>Casey Kuhlman</strong>
+                    <div class="twitter"><a href="https://twitter.com/compleatang" target="blank">@compleatang</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-chrisswenor.png"></div>
+                    <br>
+                        <strong>Chris Swenor</strong>
+                    <div class="twitter"><a href="https://twitter.com/chrisswenor" target="blank">@chrisswenor</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-claudia.png"></div>
+                    <br>
+                        <strong>Claudia Diaz</strong>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-dave.png"></div>
+                    <br>
+                        <strong>Dave Hrycyszyn</strong>
+                    <div class="twitter"><a href="https://twitter.com/futurechimp" target="blank">@futurechimp</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-dean.png"></div>
+                    <br>
+                        <strong>Dean Eigenmann</strong>
+                    <div class="twitter"><a href="https://twitter.com/DeanEigenmann" target="blank">@DeanEigenmann</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-deborah.png"></div>
+                    <br>
+                        <strong>Deborah Simpier</strong>
+                    <div class="twitter"><a href="https://twitter.com/DeborahSimpier" target="blank">@DeborahSimpier</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-eg.png"></div>
+                    <br>
+                        <strong>E.G. Galano</strong>
+                    <div class="twitter"><a href="https://twitter.com/egalano" target="blank">@egalano</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-fredrick.png"></div>
+                    <br>
+                        <strong>Fredrick Haga</strong>
+                    <div class="twitter"><a href="https://twitter.com/hagaetc" target="blank">@hagaetc</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-graham.png"></div>
+                    <br>
+                        <strong>Graham McBain</strong>
+                    <div class="twitter"><a href="https://twitter.com/grahammcbain" target="blank">@grahammcbain</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-greg.png"></div>
+                    <br>
+                        <strong>Greg McMullen</strong>
+                    <div class="twitter"><a href="https://twitter.com/gmcmullen" target="blank">@gmcmullen</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-gregory.png"></div>
+                    <br>
+                        <strong>Gregory Markou</strong>
+                    <div class="twitter"><a href="https://twitter.com/gregthegreek" target="blank">@gregthegreek</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-harry.png"></div>
+                    <br>
+                        <strong>Harry Halpin</strong>
+                    <div class="twitter"><a href="https://twitter.com/harryhalpin" target="blank">@harryhalpin</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-helena.png"></div>
+                    <br>
+                        <strong>Helena Flack </strong>
+                    <div class="twitter"><a href="https://twitter.com/helsfoftroy" target="blank">@helsfoftroy</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-jackdurose.png"></div>
+                    <br>
+                        <strong>Jack Du Rose</strong>
+                    <div class="twitter"><a href="https://twitter.com/jackdurose" target="blank">@jackdurose</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-brekke.png"></div>
+                    <br>
+                        <strong>Jaya Klara Brekke</strong>
+                    <div class="twitter"><a href="https://twitter.com/jayapapaya" target="blank">@jayapapaya</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-jedr.png"></div>
                 <br>
-                <h4><strong>Deadline: June 30th</strong><br><br>
-                Applications will be confirmed in June - please do not send applications to our e-mail.<br>
-                We will inform you upon approval - no need to check in to remind us!</h4>
+                        <strong>Jedrzej Stuczynski</strong>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-johntux.png"></div>
+                    <br>
+                        <strong>John Pacific/Tux</strong>
+                    <div class="twitter"><a href="https://twitter.com/__Tux" target="blank">@__Tux</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-jordan.png"></div>
+                    <br>
+                        <strong>Jordan Spence</strong>
+                    <div class="twitter"><a href="https://twitter.com/spencecoin" target="blank">@spencecoin</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-ken.png"></div>
+                    <br>
+                        <strong>Ken Ng</strong>
+                    <div class="twitter"><a href="https://twitter.com/nkennethk" target="blank">@nkennethk</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-luis.png"></div>
+                    <br>
+                        <strong>Luis Cuende</strong>
+                    <div class="twitter"><a href="https://twitter.com/licuende" target="blank">@licuende</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-lukasz.png"></div>
+                    <br>
+                        <strong>Lukasz Glen</strong>
+                    <div class="twitter"><a href="https://twitter.com/golemproject" target="blank">@golemproject</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-mariano.png"></div>
+                    <br>
+                        <strong>Mariano Conti</strong>
+                    <div class="twitter"><a href="https://twitter.com/nanexcool" target="blank">@nanexcool</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-martin.png"></div>
+                    <br>
+                        <strong>Martin Koppelman</strong>
+                    <div class="twitter"><a href="https://twitter.com/koeppelmann" target="blank">@koeppelmann</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-matt.png"></div>
+                    <br>
+                        <strong>Matt Ober</strong>
+                    <div class="twitter"><a href="https://twitter.com/MattOber1" target="blank">@MattOber1</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-maya.png"></div>
+                    <br>
+                        <strong>Maya Zehavi</strong>
+                    <div class="twitter"><a href="https://twitter.com/mayazi" target="blank">@mayazi</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-mehdi.png"></div>
+                    <br>
+                        <strong>Mehdi Zerouali</strong>
+                    <div class="twitter"><a href="https://twitter.com/ethZed" target="blank">@ethZed</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-mp.png"></div>
+                    <br>
+                        <strong>María Paula Fernández</strong>
+                    <div class="twitter"><a href="https://twitter.com/MPtherealMVP" target="blank">@MPtherealMVP</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-patrick.png"></div>
+                    <br>
+                        <strong>Patrick Mccorry</strong>
+                    <div class="twitter"><a href="https://twitter.com/paddykcl" target="blank">@paddykcl</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-pedro.png"></div>
+                    <br>
+                        <strong>Pedro Gomes</strong>
+                    <div class="twitter"><a href="https://twitter.com/pedrouid" target="blank">@pedrouid</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-phil.png"></div>
+                    <br>
+                        <strong>Philip "aka Liam" Stehlik</strong>
+                    <div class="twitter"><a href="https://twitter.com/pstehlik" target="blank">@pstehlik</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-raymond.png"></div>
+                    <br>
+                        <strong>Raymond Cheng</strong>
+                    <div class="twitter"><a href="https://twitter.com/RaymondCheng00" target="blank">@RaymondCheng00</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-rene.png"></div>
+                    <br>
+                        <strong>Rene Nayman</strong>
+                    <div class="twitter"><a href="https://twitter.com/renelubov" target="blank">@renelubov</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-ruth.png"></div>
+                    <br>
+                        <strong>Ruth Catlow</strong>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-stupac.png"></div>
+                    <br>
+                        <strong>Señor Tupac Amaru</strong>
+                    <div class="twitter"><a href="https://twitter.com/MPtherealMVP" target="blank">@MPtherealMVP</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-shiv.png"></div>
+                    <br>
+                        <strong>Shiv Malik</strong>
+                    <div class="twitter"><a href="https://twitter.com/shivmalik" target="blank">@shivmalik</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-silvio.png"></div>
+                    <br>
+                        <strong>Silvio Micali</strong>
+                    <div class="twitter"><a href="https://twitter.com/silviomicali" target="blank">@silviomicali</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-stephen.png"></div>
+                    <br>
+                        <strong>Stephen Palley</strong>
+                    <div class="twitter"><a href="https://twitter.com/stephendpalley" target="blank">@stephendpalley</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-steven.png"></div>
+                    <br>
+                        <strong>Steven Mckie</strong>
+                    <div class="twitter"><a href="https://twitter.com/Steven_McKie" target="blank">@Steven_McKie</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-stina.png"></div>
+                    <br>
+                        <strong>Stina Gustafsson</strong>
+                    <div class="twitter"><a href="https://twitter.com/stinalinneag" target="blank">@stinalinneag</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-udi.png"></div>
+                    <br>
+                        <strong>Udi Wertheimer</strong>
+                    <div class="twitter"><a href="https://twitter.com/udiWertheimer" target="blank">@udiWertheimer</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/r-viktor.png"></div>
+                    <br>
+                        <strong>Viktor Radchenko</strong>
+                    <div class="twitter"><a href="https://twitter.com/vikmeup" target="blank">@vikmeup</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/y-vlad.png"></div>
+                    <br>
+                        <strong>Vlad Zamfir</strong>
+                    <div class="twitter"><a href="https://twitter.com/VladZamfir" target="blank">@VladZamfir</a></div>
+                </div>
+                <div class="grid-item"><div class="profile"><img src="img/speaker/b-yaz.png"></div>
+                    <br>
+                        <strong>Yaz Khoury</strong>
+                    <div class="twitter"><a href="https://twitter.com/Yazanator" target="blank">@Yazanator</a></div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+                <br>
+                <h4>Applications to speak are now closed.</h4>
+
                 <br>
                 <h4>Curation team led by exiledsurfer & Helena Flack.</h4>
                 <br>
                 <h4>We expect all speakers to accept and adhere to our
-                    <a href="https://github.com/ethberlin-hackathon/ETHBerlin-KnowledgeBase/blob/master/code-of-conduct.md">Code of Conduct.</a></h4>
-                
-    
+                    <a href="https://ethberlinzwei.github.io/KnowledgeBase/code-of-conduct.html">Code of Conduct.</a></h4>
+
+
         </div>
     <canvas id="canvas" style="background-color: rgb(255, 251, 239)" resize="true"></canvas>
     </div>
-    
+
 </body>
 </html>
